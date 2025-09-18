@@ -1,0 +1,30 @@
+{
+  "name": "route-planner",
+  "version": "1.0.0",
+  "description": "An app created to generated optimized routes between multiple destinations",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon app/app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ChrisGitmed/route-planner.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "module",
+  "bugs": {
+    "url": "https://github.com/ChrisGitmed/route-planner/issues"
+  },
+  "homepage": "https://github.com/ChrisGitmed/route-planner#readme",
+  "dependencies": {
+    "dotenv": "17.2.2",
+    "express": "5.1.0",
+    "morgan": "1.10.1"
+  },
+  "devDependencies": {
+    "eslint": "9.35.0",
+    "nodemon": "3.1.10"
+  }
+}
