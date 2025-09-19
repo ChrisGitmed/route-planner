@@ -13,9 +13,9 @@ class Application {
   /// Application
   static app = express()
     .use(express.json({ limit: '50mb' }))
-    .use(express.urlencoded({ extended: true }))
+    .use(express.urlencoded({ extended: true }));
     // .use('/api', router) // TODO
-    
+
   /// Start Application
   static async start (port) {
     // On any uncaught exception, log the error to the console
@@ -43,7 +43,7 @@ class Application {
   const modulePath = path.resolve(fileURLToPath(import.meta.url));
   const mainScriptPath = path.resolve(process.argv[1]);
   const isInvokedViaCommandLine = modulePath === mainScriptPath;
-  if (isInvokedViaCommandLine) await Application.start(config.port || 5300)
+  if (isInvokedViaCommandLine) await Application.start(config.port || 5300);
 })();
 
 
